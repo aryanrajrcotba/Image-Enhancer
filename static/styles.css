@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 50%;
+    margin: 5% auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+/* File Upload */
+.file-upload input[type="file"] {
+    display: none;
+}
+.file-upload label {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0072ff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.file-upload label:hover {
+    background: #005bb5;
+}
+
+/* Image Preview */
+#preview {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Sliders */
+.slider-container {
+    margin: 15px 0;
+}
+.slider {
+    width: 100%;
+}
+label span {
+    font-weight: bold;
+}
+
+/* Checkboxes */
+.checkbox-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+.checkbox-group label {
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.checkbox-group input {
+    margin-right: 5px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.download-btn, .reset-btn {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.download-btn {
+    background: #28a745;
+    color: white;
+}
+.download-btn:hover {
+    background: #218838;
+}
+
+.reset-btn {
+    background: #dc3545;
+    color: white;
+}
+.reset-btn:hover {
+    background: #c82333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
